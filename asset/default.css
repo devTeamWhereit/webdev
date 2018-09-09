@@ -1,0 +1,170 @@
+@font-face { font-family: 'Montserrat-Black'; src: url(/asset/dist/font/Montserrat-Black.ttf) format('truetype')}
+@font-face { font-family: 'Montserrat-Bold'; src: url(/asset/dist/font/Montserrat-Bold.ttf) format('truetype')}
+@font-face { font-family: 'Montserrat-Medium'; src: url(/asset/dist/font/Montserrat-Medium.ttf) format('truetype')}
+@font-face { font-family: 'Montserrat-Regular'; src: url(/asset/dist/font/Montserrat-Regular.ttf) format('truetype')}
+@font-face { font-family: 'Montserrat-SemiBold'; src: url(/asset/dist/font/Montserrat-SemiBold.ttf) format('truetype')}
+@font-face { font-family: 'NotoSansCJKkr-Black'; src: url(/asset/dist/font/NotoSansCJKkr-Black.otf) format('truetype')}
+@font-face { font-family: 'NotoSansCJKkr-Bold'; src: url(/asset/dist/font/NotoSansCJKkr-Bold.otf) format('truetype')}
+@font-face { font-family: 'NotoSansCJKkr-DemiLight'; src: url(/asset/dist/font/NotoSansCJKkr-DemiLight.otf) format('truetype')}
+@font-face { font-family: 'NotoSansCJKkr-Medium'; src: url(/asset/dist/font/NotoSansCJKkr-Medium.otf) format('truetype')}
+@font-face { font-family: 'NotoSansCJKkr-Regular'; src: url(/asset/dist/font/NotoSansCJKkr-Regular.otf) format('truetype')}
+@font-face { font-family: 'Walkway_Bold'; src: url(/asset/dist/font/Walkway_Bold.ttf) format('truetype')}
+body{
+    font-family: Montserrat-Black, Montserrat-Bold, Montserrat-Medium,Montserrat-Regular,Montserrat-SemiBold,NotoSansCJKkr-Black,NotoSansCJKkr-Bold, NotoSansCJKkr-DemiLight,NotoSansCJKkr-Medium, NotoSansCJKkr-Regular,Walkway_Bold;
+}
+header{
+    /*display: inherit;*/
+}
+.nav-link {
+    display: block;
+    padding: 0;
+}
+a {
+    font-family: NotoSansCJKkr-Medium;
+    color: #8a7f8a;
+    font-weight: 100;
+    /*text-decoration: underline;*/
+}
+a:hover {
+    color: #504f57;
+    /*text-decoration: underline;*/
+}
+a:active{
+    color: #8a7f8a;
+    /*text-decoration: underline;*/
+}
+a:visited{
+    color: #8a7f8a;
+    /*text-decoration: underline;*/
+}
+header .container .main-header img{
+    /*position: relative;*/
+    margin-top:27px ;
+    margin-bottom: 23px;
+    vertical-align: middle;
+    border-style: none;
+    float:left
+}
+
+header .container .main-header span{
+    margin-top: 63px;
+    margin-left:26px;
+    font-family: Walkway_bold;
+    float:left
+}
+
+header .container .main-header {
+    display: block;
+}
+
+
+header .container .main-header .navbar-expand-xl{
+
+    /*margin-bottom: 40px;*/
+}
+
+header .container .main-header .text-right a{
+
+    /*font-size:12pt;*/
+}
+header .my-2{
+    width: 100%;
+}
+header .my-2 .container a{
+    /*font-family: NotoSansCJKkr-Medium;*/
+    font-size:12pt;
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1285px;
+    }
+}
+
+
+.dropdown-menu {
+    /*position: absolute;*/
+    top: -10px;
+    left: 0;
+    z-index: 1000;
+    /*display: none;*/
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+/*슬라이드*/
+@media (min-width: 1200px){
+    .owl-carousel .owl-item img{
+        width: 1285px;
+    }
+}
+@media (max-width: 600px){
+    .owl-carousel .owl-item img{
+        width: 300px;
+    }
+}
+.owl-carousel .owl-item img{
+    /*height: 613px;*/
+    border: 1px solid #eee;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+
+}
+/*슬라이드종료*/
+.dropdown-item span{
+    color:#ebdaeb;
+}
+.dropdown-toggle span{
+    color:#ebdaeb;
+}
+.mt-45{
+    margin-top: 45px;
+}
+.form-control{
+    border-radius:1.25rem;
+}
+.btn{
+    border-radius:1.25rem;
+
+}
+.btn-dark{
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0.475rem 1.75rem;
+}
+.search-form{
+    width: 100%
+}
+.owl-dots{
+    position: relative;
+    margin-top: -70px;
+    z-index: 3;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+    background:#fff;
+}
+.owl-theme .owl-dots .owl-dot span {
+    border: 1px solid #fff;
+    background: rgba(255, 178, 0, 0);
+}
+
+
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}

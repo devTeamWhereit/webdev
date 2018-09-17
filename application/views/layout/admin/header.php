@@ -39,30 +39,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-        function banner_insert_plus () {
+        function banner_insert_plus (theme) {
+
             $('.plus-btn').remove();
             var banner_num= Number($('#default_banner_num').val());
 
             banner_num=banner_num+1;
             var html='';
-            html +=  '<div class="form-group">' +
-                '<label class="control-label col-md-2">banner'+banner_num+'</label>' +
-                '<div class="col-md-6">' +
-                '<input type="text" name="banner31" class="form-control" placeholder="URL">' +
-                '</div>' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label class="control-label col-md-2">&nbsp;</label>' +
-                '<div class="col-md-6">' +
-                '<input type="text" name="banner32" class="form-control" placeholder="파일명">' +
-                '</div>' +
-                '<div class="col-md-4">' +
-                '<button type="button" class="btn btn-default">첨부</button>' +
-                '<button type="button" class="btn btn-primary">적용</button>' +
-                '<button type="button" class="btn btn-danger">삭제</button>' +
-                '<button type="button" class="btn btn-info plus-btn" onclick="banner_insert_plus()">추가</button>' +
-                '</div>' +
-                '</div>';
+            if(theme=='theme_rank'){
+                html +=  '<div class="form-group">' +
+                    '<label class="control-label col-md-2">테마'+banner_num+'</label>' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="banner31" class="form-control" placeholder="URL">' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label class="control-label col-md-2">테그'+banner_num+'</label>' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="banner32" class="form-control" placeholder="파일명">' +
+                    '</div>' +
+                    '<div class="col-md-4">' +
+                    '<button type="button" class="btn btn-default">첨부</button>' +
+                    '<button type="button" class="btn btn-primary">적용</button>' +
+                    '<button type="button" class="btn btn-danger">삭제</button>' +
+                    '<button type="button" class="btn btn-info plus-btn" onclick="banner_insert_plus(\'theme_rank\')">추가</button>' +
+                    '</div>' +
+                    '</div>';
+            }else{
+                html +=  '<div class="form-group">' +
+                    '<label class="control-label col-md-2">banner'+banner_num+'</label>' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="banner31" class="form-control" placeholder="URL">' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label class="control-label col-md-2">&nbsp;</label>' +
+                    '<div class="col-md-6">' +
+                    '<input type="text" name="banner32" class="form-control" placeholder="파일명">' +
+                    '</div>' +
+                    '<div class="col-md-4">' +
+                    '<button type="button" class="btn btn-default">첨부</button>' +
+                    '<button type="button" class="btn btn-primary">적용</button>' +
+                    '<button type="button" class="btn btn-danger">삭제</button>' +
+                    '<button type="button" class="btn btn-info plus-btn" onclick="banner_insert_plus()">추가</button>' +
+                    '</div>' +
+                    '</div>';
+            }
+
             $('#banner_form').append(html);
             $('#default_banner_num').val(banner_num);
         }
@@ -137,8 +160,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
 
                 </li>
-                <li class="treeview">
-                    <a href="#">
+                <li class="<?=$menu_name=='rank'?'active':''?>">
+                    <a href="/index.php/adm/ranking">
                         <i class="fa fa-list-ol"></i> <span>랭킹관리</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>

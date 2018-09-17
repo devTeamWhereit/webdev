@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="main-header">
 
                     <!--                <a class="main-header-brand" href="#">-->
-                    <img src="/asset/image/header/logo.png"  width="169" height="54" alt="">
+                    <img src="/asset/image/header/logo.png"  alt="" class="img-fluid">
                     <!--                </a>-->
                     <div class="hidden-xs">
                         <span> | </span>
@@ -47,14 +47,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </header>
     <div class="bg-light">
         <div class="container">
-            <nav class="navbar navbar-expand-md hidden-xs">
+            <nav class="navbar navbar-expand-xs ">
                 <!--            <a class="navbar-brand" href="#">Navbar</a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto hidden-xs">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">랭킹 <span class="sr-only">(current)</span></a>
                         </li>
@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         </div>
    </div>
-    <footer class="footer">
+    <footer class="footer hidden-xs">
             <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-light">
                 <div class="container">
                     <span class="text-muted">Copyright 2018 BILLFISH Co,.,Ltd. All right reserved.</span>

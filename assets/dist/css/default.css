@@ -1,0 +1,11 @@
+.table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+}
+.table > tbody > tr > th{
+    text-align: center;
+}
+
+.user-block {
+    display: inline-table;
+}
